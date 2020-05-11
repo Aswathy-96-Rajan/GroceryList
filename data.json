@@ -1,0 +1,23 @@
+
+    [
+       
+        {"SerialNo": "1", "Name": "Cucumber","Quantity": "1", "Units": "kg" , "Department": "Vegetable", "Notes": "Small"},
+            
+        {"SerialNo": "2", "Name": "Chilli Powder","Quantity": "100", "Units": "gm" , "Department": "Groceries", "Notes": "Kitchen Treasures"},
+        
+        {"SerialNo": "3", "Name": "Coriander Powder","Quantity": "100", "Units": "gm" , "Department": "Groceries", "Notes": "Nirapara"},
+        
+        {"SerialNo": "4", "Name": "Dried Chilli","Quantity": "1", "Units": "kg" , "Department": "Groceries", "Notes": "Medium Size"},
+        
+        {"SerialNo": "5", "Name": "Banana","Quantity": "1", "Units": "kg" , "Department": "Fruits", "Notes": "Robusto"},
+        
+        {"SerialNo": "6", "Name": "Apple","Quantity": "1", "Units": "kg" , "Department": "Fruits", "Notes": "green"},
+        
+        {"SerialNo": "7", "Name": "Mango","Quantity": "1", "Units": "kg" , "Department": "Fruits", "Notes": "Ripe"},
+        
+        {"SerialNo": "8", "Name": "Tomato","Quantity": "1", "Units": "kg" , "Department": "vegetable", "Notes": "Unripe"},
+        
+        {"SerialNo": "9", "Name": "Turmeric Powder","Quantity": "150", "Units": "gm" , "Department": "Groceries", "Notes": "Nirapara"},
+        
+        {"SerialNo": "10", "Name": "Pepper Powder","Quantity": "50", "Units": "gm" , "Department": "Groceries", "Notes": "Nirapara"}
+    ]

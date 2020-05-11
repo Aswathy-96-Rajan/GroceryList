@@ -1,0 +1,44 @@
+<html>
+    <head>
+        <style>
+            .bg{background-image: url('BC.png'); height: 100vh;}
+        </style>
+    </head>
+<body>
+        
+        <form class="form-container bg">
+        <h1 style="text-align: center;">ASSIGNMENT NO. 3</h1>
+        <h2 style="text-align: center; color: maroon;">Press the button to get the Grocery list</h2>
+        <div class="table-responsive">
+        <button onclick="data(); return false;" style="margin-top:20px; margin-left: 230px; border: solid black;">GROCERY LIST</button>
+        <p id="demo" style="padding: 50px;" ></p>
+        </div>
+        </form>
+        <script>
+        function data()
+        {
+            var ob,db,xmlhttp,apple,x,text="";
+            db=JSON.stringify(ob);
+            xmlhttp=new XMLHttpRequest();
+            xmlhttp.onreadystatechange=function()
+            {
+                if(this.readyState==4 && this.status==200)
+                {
+                    apple=JSON.parse(this.responseText);
+                    text += "<table border = '7'><tr><th>SerialNo</th><th>Name</th><th>Quantity</th><th>Units</th><th>Department</th><th>Notes</th></tr>";
+                    
+                        for(x in apple)
+                        {
+                            text += "<tr><td>" + apple[x].SerialNo +"</td><td>" + apple[x].Name +"</td><td>" + apple[x].Quantity +"</td><td>" + apple[x].Units +"</td><td>" + apple[x].Department +"</td><td>" + apple[x].Notes +"</td></tr>";
+                        }
+                        text +="</table>";
+                        document.getElementById("demo").innerHTML = text;
+                        document.getElementById("demo").style.textAlign="center";
+                }
+            }
+            xmlhttp.open("GET","data.json",true);
+            xmlhttp.send();
+        }
+</script>
+</body>
+</html>
